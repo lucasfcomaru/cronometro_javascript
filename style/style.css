@@ -109,6 +109,12 @@ body {
     padding: 20px;
     gap: 8px;
 
+    .relogio {
+      width: 46%;
+      top: 56px;
+      left: -78px
+    }
+
     h1 {
       font-size: 1.75rem;
     }
