@@ -4,33 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cronômetro</title>
+    <meta
+      name="description"
+      content="Cronômetro utilizando HTML, CSS e JavaScript"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main aria-label="cronômetro">
+    <main class="container" aria-label="cronômetro">
+      <h1>cronômetro</h1>
 
       <div class="tempo" aria-label="tempo">
-        <div class="hora" data-hora>00</div>
+        <div class="hora" data-hora>0</div>
         <div class="separador">:</div>
-        <div class="minuto" data-minuto>00</div>
+        <div class="minuto" data-minuto>0</div>
         <div class="separador">:</div>
-        <div class="segundo" data-segundo>00</div>
+        <div class="segundo" data-segundo>0</div>
       </div>
 
       <div class="botoes" aria-label="botões">
-        <button class="inciciar" data-iniciar>
+        <button class="botao" data-iniciar>
           <img src="./img/play-fill.svg" alt="iniciar" />
-          <span class="texto">Iniciar</span>
         </button>
-        <button class="pausar" data-pausar>
+        <button class="botao" data-pausar>
           <img src="./img/pause-fill.svg" alt="pausar" />
-          <span class="texto">Pausar</span>
         </button>
-        <button class="parar" data-parar>
+        <button class="botao" data-parar>
           <img src="./img/stop-fill.svg" alt="parar" />
-          <span class="texto">Parar</span>
         </button>
       </div>
-
     </main>
 
     <script src="./js/script.js"></script>

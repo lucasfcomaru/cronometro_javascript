@@ -5,7 +5,7 @@ const parar = document.querySelector("[data-parar]");
 
 iniciar.addEventListener("click", iniciarTempo);
 pausar.addEventListener("click", pausarTempo);
-// parar.addEventListener("click", pararTempo);
+parar.addEventListener("click", pararTempo);
 
 // espaços para os números
 const hora = document.querySelector("[data-hora]");
@@ -46,4 +46,16 @@ function pausarTempo() {
   clearInterval(timer); // para o setInterval()
   iniciar.removeAttribute('disabled', ''); // habilita botão iniciar
 
+}
+
+function pararTempo() {
+  clearInterval(timer); // para o setInterval()
+  iniciar.removeAttribute('disabled', ''); // habilita botão iniciar
+  horas = 0;
+  minutos = 0;
+  segundos = 0;
+
+  segundo.innerText = segundos;
+  minuto.innerText = minutos;
+  hora.innerText = horas;
 }
