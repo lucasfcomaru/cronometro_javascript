@@ -37,7 +37,7 @@ function iniciarTempo() {
       minuto.innerText = minutos;
       hora.innerText = ++horas;
     }
-  }, 5);
+  }, 1000);
 
   iniciar.setAttribute('disabled', ''); // desabilita o botão iniciar
 }
